@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: auto;
+}
+
+
+
+/* button */
+.FetchBtn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 20px 15px 15px 0;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+}
+
+.FetchBtn:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+
+.FetchBtn:hover {
+    transition: all 0.2s;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+
+.FetchBtn:active {
+    background-color: #808080;
+}
+
+.FetchBtn:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+/* postContainer */
+.posts-container {
+    width: fit-content;
+}
+
+.post_card_ev {
+    margin-top: 20px;
+    border: 2px solid rgb(87, 87, 87);
+    background-color: #dbdbdb;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.post_card_layout {
+    display: flex;
+    align-items: flex-start;
+    /* Выравнивание элементов по верхнему краю */
+    gap: 20px;
+    /* Расстояние между элементами */
+}
+
+.post_img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    /* Сохраняет пропорции изображения */
+}
+
+.post_text_layout {
+    flex: 2;
+    /* Занимает оставшееся пространство */
+}
+
+.post_id_title {
+    margin-bottom: 10px;
+}
+
+.post_discr {
+    font-size: 14px;
+    color: #555;
+}
+
+.post_char_column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Выравнивание по правому краю */
+    gap: 5px;
+    /* Расстояние между ценой и рейтингом */
+}
+
+.post_price_title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: inherit;
+    align-items: center;
+}
+
+
+/* auth */
+
+.auth-form {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.auth-form button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 25px;
+    margin: 20px 15px 15px 0;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+}
+
+nav {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: right;
+}
+
+nav button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 20px 15px 15px 0;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+}
+
+/* cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .cart-item img {
+    object-fit: cover;
+  }
